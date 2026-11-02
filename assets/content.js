@@ -460,3 +460,22 @@ const GLOSSARY = [
     def: "An 8-point scale measuring longer-term functional recovery after brain injury, used as the main outcome in trials testing whether ketamine's effects on ICP or vasopressor requirement actually translate into better patient-centred recovery — so far without a clearly demonstrated benefit."
   }
 ];
+
+// Clinical agent (drug) names to visually emphasise wherever they appear —
+// in the diagram boxes themselves and in the readout panel's prose. This
+// is a rendering-only concern (app.js wraps each match in a styled span at
+// render time); it never touches label/sub, which stay byte-exact as
+// authored. Matching is case-insensitive and whole-word, longest name
+// first. "Esketamine" is deliberately not listed here — it already has a
+// richer, clickable GLOSSARY entry above, which linkify() prefers.
+// Added at Dr. Özgür Karcıoğlu's request, 2026-11-02 — see METHODOLOGY.md.
+const AGENTS = [
+  "Ketamine",
+  "Propofol",
+  "Etomidate",
+  "Fentanyl",
+  "Midazolam",
+  "Atropine",
+  "Glycopyrrolate",
+  "Morphine"
+];
