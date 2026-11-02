@@ -83,26 +83,53 @@ Several things are worth flagging explicitly:
   manuscript gave "...for prevention of..."; the paper's real title is
   "...does not affect...", which is in fact consistent with its null
   result for delirium. Corrected in both `text` and `kind`.
-- **~23 of the 98 references are still pending independent verification**,
-  flagged individually in their own `kind` field, because this session's
-  shared web-search budget was exhausted mid-task. This includes the
-  entire evidence basis for the laryngospasm box (refs 92–95) and the
-  specific 81%-seizure-response claim behind the seizure box (ref 80) —
-  those boxes' content is drawn directly from the manuscript's own
-  Discussion section, but the citations supporting it have not yet been
-  independently confirmed against a primary source and should not be
-  treated as fully verified until a follow-up pass completes them. One of
-  the still-pending references (#79) was additionally flagged by a
-  reviewing agent as fitting the same red-flag pattern (a generic review
-  title + a very recent year + an oddly specific article number) as the
-  confirmed-fabricated ref 51 above — it is not used on any flowchart node,
-  but should be checked with priority.
+- **Reference 63 was fabricated-as-cited and has been corrected.** The
+  manuscript cited "Daghmouri, Chaouch, Noomen" in the *European Journal of
+  Emergency Medicine* for the etomidate-vs-ketamine RSI comparison; that
+  DOI resolves to an unrelated 2017 paper, and no paper by those authors on
+  this topic could be found anywhere despite exhaustive searching. The
+  underlying claim is real, though: the actual systematic review/
+  meta-analysis covering this exact comparison was located and substituted
+  in its place — Greer et al. (2025), *Critical Care Medicine*. **This is
+  the one fabrication finding that matters for what's on screen**: ref 63
+  is actively cited by the induction/RSI content box (`branch-a-content`),
+  so this correction changes a reference the reader actually sees, not
+  just the bibliography.
+- **Reference 79 is confirmed fabricated** — exhaustive multi-angle
+  searching (title, authors, DOI, journal/volume/article number) found no
+  trace of it anywhere. It fits the same pattern as the confirmed-fabricated
+  ref 51 above (a generic review title, a very recent year, an unusually
+  specific article number). It is not used on any flowchart node and has
+  not been replaced, since no real paper was found to stand in for it;
+  flagged in its own `kind` field and should be raised with the manuscript
+  authors.
+- **Reference 52 remains unverifiable** — no trace found, but also no
+  fabrication signal (unlike 51/79). Not used on any flowchart node;
+  flagged rather than treated as confirmed.
+- **References 56 and 76 had minor year corrections** (epub-ahead-of-print
+  vs. final print year: 2023→2024 and 2019→2020 respectively), confirmed
+  against the publisher's own record.
+- **The remaining references — including the entire evidence basis for the
+  laryngospasm box (refs 92–95) and the specific 81%-seizure-response claim
+  behind the seizure box (ref 80) — have now been independently verified**
+  against primary sources, closing out what an earlier pass had to leave
+  as "pending" when this session's shared web-search budget ran out
+  mid-task.
+- **Four references (42–45), the canonical GRADE methodology papers, still
+  carry a "not independently re-searched live this session" caveat** in
+  their own `kind` field. Baseline confidence in these is very high — they
+  are foundational, widely-cited methodology papers — but they were not
+  re-checked against a live primary source this pass, and that's stated
+  plainly rather than presented as equivalent to the verification done on
+  everything else.
 
-All checked references were independently re-verified against their
-primary sources before inclusion; the ones not yet checked are explicitly
-marked as such rather than presented as confirmed. Everything else not
-flagged above is paraphrased from a cited source, listed in the References
-section at the bottom of the page.
+Every reference above not flagged as fabricated or unverifiable has been
+independently re-verified against its primary source rather than accepted
+on trust from the manuscript's own list; anything not yet checked, or found
+to be wrong, is marked as such in its own `kind` field rather than
+presented as confirmed. Everything else not flagged above is paraphrased
+from a cited source, listed in the References section at the bottom of the
+page.
 
 This tool also introduces the atlas's first non-single-row complication
 group: `assets/style.css`'s `.flow-wrap-comp` lays out six boxes as two
