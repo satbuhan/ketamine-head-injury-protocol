@@ -8,6 +8,11 @@
 // text is byte-for-byte as authored; meaning/rationale/refs are added
 // research, independently verified against each primary source.
 
+// Date this tool's content and citations were last built/checked
+// together (see assets/app.js's References summary, and the hub
+// README's "Content search index"-adjacent conventions doc).
+const VERIFIED = "2026-11-02";
+
 const REFERENCES = [
   { id: 1, kind: "TBI global-incidence estimate; independently verified.",
     text: "Dewan, M.C., Rattani, A., Gupta, S. et al. (2018) 'Estimating the global incidence of traumatic brain injury', Journal of Neurosurgery, 130(4), pp. 1080-1097.",
